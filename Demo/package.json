@@ -1,0 +1,22 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "Learing the node ClassLecture02",
+  "main": "file.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node file.js",
+    "dev": "nodemon file.js",
+    "build":""
+  },
+  "keywords": [],
+  "author": "vishal tiwari",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "nodemon": "^3.1.11"
+  }
+}
