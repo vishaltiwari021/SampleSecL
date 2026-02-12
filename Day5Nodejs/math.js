@@ -9,3 +9,4 @@ const sub= (a,b) =>{
 }
 
 module.exports = {sum,div,sub};
+
