@@ -1,7 +1,7 @@
 //here we learn abou the path module of the Node js
 //this syntax use in comman js..
 
-const path =  require("path");
+import path from "path";
 
 console.log(__dirname);
 console.log(__filename);

@@ -3,7 +3,7 @@ const http =  require("http");
 const fs  =  require("fs");
 const path = require("path");
 
-//const countFile  = path.join(__dirname, "count.txt");
+
 
 const server  = http.createServer((req,res) =>{
    const requesturl = req.url;
@@ -23,7 +23,7 @@ const server  = http.createServer((req,res) =>{
     
 });
 
- //fs.writeFile(countFile, 'utf8')
+
 
 server.listen(3000,()=>{
     console.log(`server is live on port${3000}`);

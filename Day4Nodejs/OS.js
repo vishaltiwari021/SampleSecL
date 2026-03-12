@@ -16,5 +16,28 @@ console.log(os.endianness());
 console.log(os.homedir());
 console.log(os.hostname());
 
+/*
 
+
+//console.log(os.arch());
+//console.log(os.cpus());
+console.log(os.homedir());
+console.log(os.hostname());
+// console.log(os.machine());
+console.log(os.platform());
+console.log(os.release());
+//console.log(os.getPriority());
+console.log(os.freemem());//bytes
+console.log(os.totalmem());//bytes
+console.log(os.type());//bytes
+console.log(os.uptime());//bytes
+console.log(os.userInfo());//bytes
+console.log(os.version());//bytes
+console.log(os.availableParallelism());//bytes
+//console.log(os.devNull);
+//console.log(os.endianness());
+
+
+
+*/
 
