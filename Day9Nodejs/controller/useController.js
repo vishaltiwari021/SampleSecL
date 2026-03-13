@@ -3,7 +3,8 @@ const users = require('../module/useModule');
 
 exports.getUsers =(req,res)=>{
     res.json(users)
-}
+};
+
 exports.getUsersById =(req,res)=>{
     const userId = req.params.id;
     users.map(userDetail=>{
@@ -14,6 +15,12 @@ exports.getUsersById =(req,res)=>{
         res.json(userDetail);
         }
     })
+};
+
+exports.addUser = (req,res)=>{
+    console.log("user body",req.body);
+    res.json(req.body);
 }
+
 
 
