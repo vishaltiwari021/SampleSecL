@@ -7,4 +7,5 @@ routes.get('/users',userController.getUsers)
 routes.get('/users/:id',userController.getUsersById)
 routes.post('/users/adduser',userController.addUser);
 
+
 module.exports = routes;

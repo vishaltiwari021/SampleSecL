@@ -7,15 +7,30 @@ exports.getUsers =(req,res)=>{
 
 exports.getUsersById =(req,res)=>{
     const userId = req.params.id;
+    const name = req.query.name;
+    const header = req.headers;
+
+    console.log(userId);
+    console.log(name);
+    console.log(header);
+    
     users.map(userDetail=>{
-        console.log(userDetail);
         
        const id = userDetail['id'];
         if(id == userId){
-        res.json(userDetail);
+        res.json(userDetail,name);
         }
     })
+    
 };
+/*
+17/03/26:
+
+res.redirect();
+res.status();
+res.send();
+res.json();
+*/
 
 exports.addUser = (req,res)=>{
     console.log("user body",req.body);

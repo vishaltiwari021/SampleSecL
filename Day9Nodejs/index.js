@@ -12,11 +12,10 @@ MVC:
 
 
 const app = require('./app.js')
-const dotenv = require('dotenv').config();
-
-
-
-
+const dotenv = require('dotenv')
+dotenv.config({
+    path: ".env.production"
+});
 
 
 const PORT = process.env.PORT
