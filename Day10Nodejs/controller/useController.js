@@ -16,7 +16,7 @@ exports.getProductsById =(req,res)=>{
     })
 };
 
-exports.addProduct = (req,res)=>{
+exports.cartProduct = (req,res)=>{
     console.log("user body",req.body);
     res.json(req.body);
 }
