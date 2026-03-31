@@ -1,0 +1,17 @@
+
+    
+    <%- include("header", header) %>
+    <%- include("content", content) %>
+    <%- include("footer", footer) %> 
+    
+    <h1>hello world of ejs</h1>
+    <h2>Name of university is : <%= data.university %></h2>
+        <ol>
+        <% data.student.forEach(student=> { %>
+            <li><%= student.name  %>
+            <%= student.dept  %></li>
+       <% }) %>
+        
+    </ol>
+
+   
