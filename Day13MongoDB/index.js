@@ -3,39 +3,44 @@
 
 db.users.insertMany([
   {
-    "name": "Amit Sharma",
-    "age": 22,
-    "course": "Computer Science",
-    "isActive": true,
-    "skills": ["JavaScript", "React", "MongoDB"]
-  },
-  {
     "name": "Priya Verma",
     "age": 24,
     "course": "Information Technology",
     "isActive": false,
-    "skills": ["Python", "Django", "SQL"]
+    "skills": ["Python", "Django", "SQL"],
+      "marks":[
+{"subject":"Node,js",total:88, isPass:true},
+],
   },
   {
     "name": "Rahul Singh",
     "age": 21,
     "course": "Electronics",
     "isActive": true,
-    "skills": ["C++", "Embedded Systems", "MATLAB"]
+    "skills": ["C++", "Embedded Systems", "MATLAB"],
+      "marks":[
+{"subject":"Node,js",total:88, isPass:true},
+],
   },
   {
     "name": "Sneha Patel",
     "age": 23,
     "course": "Data Science",
     "isActive": true,
-    "skills": ["R", "Machine Learning", "TensorFlow"]
+    "skills": ["R", "Machine Learning", "TensorFlow"],
+      "marks":[
+{"subject":"Node,js",total:88, isPass:true},
+],
   },
   {
     "name": "Vikram Joshi",
     "age": 25,
     "course": "Mechanical Engineering",
     "isActive": false,
-    "skills": ["AutoCAD", "SolidWorks", "ANSYS"]
+    "skills": ["AutoCAD", "SolidWorks", "ANSYS"],
+      "marks":[
+{"subject":"Node,js",total:88, isPass:true},
+],
   },
   {
     "name": "Ananya Gupta",
@@ -45,14 +50,11 @@ db.users.insertMany([
     "skills": ["Networking", "Linux", "Penetration Testing"],
     "marks":[
 {"subject":"Node,js",total:88, isPass:true},
-{"subject":"Node,js",total:85, isPass:true},
-{"subject":"Node,js",total:86, isPass:true},
-{"subject":"Node,js",total:83, isPass:true},
 ],
   }
 ])
 //->->_>_>_>__>_>__>_>_>_>_>_>_>__>_>_>_>__>_>_>_>_>_>_>_>_>_>_>_>_>_>_>_>_>_>_>_>_>_>_>_>_>_>_>_>_>_>_>
-// 3/4/26:
+//3/4/26:
 //db.users.find({},{});
 //               |->filter,|->projections(for specific data)inclusion and exclusion
 // projection of inclusion and exclusion we cannot use the inclusion and exclusion simultanoiuly in the field
@@ -100,4 +102,11 @@ pull: for the update,index position pull
 db.users.updateOne({_id:ObjectId('69ce3f12393cf50b07cebeac')},{"pull":{skills:["Linux"]}})
 db.users.find({$or:[{isActive:false},{skills:{$in:{"Python"}}}]})
 db.users.find({$or:[{"isActive":false},{skills:"Linux"}]})
+*/
+
+//9/04/26:
+/*
+
+
+
 */
