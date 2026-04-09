@@ -6,5 +6,6 @@ exports.getUsers = async (req,res) =>{
 }
 exports.getUserId = async(req,res)=>{
     const {name} = req.params;
-    return await User.find({name:name});
+    const user = await User.find({name:name});
+    res.json(user);
 }
