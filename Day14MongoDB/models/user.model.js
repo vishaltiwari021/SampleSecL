@@ -26,8 +26,18 @@ const userSchema = new mongoose.Schema({
         },
         marks:{
             type:[{subject:String,Score:Number}]
-        }
+        },
+        shortId:{
+        type:String,
+        required:true,
+        unique:true
+    },
+    redirectURL:{
+        type:String,
+        required:true
+    },
 });
+
 
 const User = mongoose.model('User',userSchema);
 

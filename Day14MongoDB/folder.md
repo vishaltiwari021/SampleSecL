@@ -1,0 +1,1 @@
+#JOI it's the data validation library for JS before the database and after the client response it's validate the data.
